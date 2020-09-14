@@ -41,9 +41,10 @@ main {
 #typingText {
   align-items: center;
   text-align: center;
+  font-size: 130%;
 }
 
-#title, #subtitle, #st-btn {
+#title, #subtitle, #st-btn, #typing, #stats, #startNewTest {
   display: none;
 }
 
@@ -57,4 +58,16 @@ main {
   text-decoration: underline;
   text-decoration-color: #eb3b5a;
   color: #eb3b5a;
+}
+
+#endTestBTN {
+  margin-bottom: 20px;
+}
+
+#typingFormat {
+  width: 300px;
+}
+
+#typingTest, #typingBox {
+  width: 400px;
 }
