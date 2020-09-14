@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 210px;
+  background-color: #F4F5F6;
+  position: relative;
+  display: block;
+  top: 50%;
+  text-align: center;
+}
+
+button:focus {
+  background-color: #9B4DCA;
+}
+
+button:active {
+  background-color: #606C76;
+}
+
+main {
+  position: relative;
+  margin-top: 5%;
+}
+
+.side {
+  margin-left: 10%;
+}
+
+.center {
+  display: block;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+#typingText {
+  align-items: center;
+  text-align: center;
+}
+
+#title, #subtitle, #st-btn {
+  display: none;
+}
+
+.correct {
+  text-decoration: underline;
+  text-decoration-color: #26de81;
+  color: #26de81;
+}
+
+.incorrect {
+  text-decoration: underline;
+  text-decoration-color: #eb3b5a;
+  color: #eb3b5a;
+}

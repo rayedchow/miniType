@@ -1,0 +1,105 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A Free Typing Site to test your typing skills!"
+    />
+
+    <title>miniType</title>
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+  </head>
+  <body>
+    <header>
+      <h1 id="title">miniType</h1>
+      <p id="subtitle">
+        <em>A Minimalistic Typing Application</em>
+      </p>
+      <br>
+      <button id="st-btn">
+        Start Typing
+      </button>
+    </header>
+
+    <main>
+      
+      <div id="typing" style="display: none;">
+        <p id="timer" class="center"></p>
+        <br>
+        <button onclick="fetchText();" class="center">
+          New Text
+        </button>
+        <p id="typingText" style="font-size: 130%;"></p>
+        <input type="text" placeholder="Type Here" id="typingBox" style="width: 400px;" class="center">
+        <br>
+        <button onclick="endTyping(false);" class="center" style="margin-bottom: 20px;">
+          End Test
+        </button>
+      </div>
+
+
+
+      <div id="typingForm" class="center">
+        
+        <label for="typingFormat" class="center">Typing Format</label>
+        <select id="typingFormat" style="width: 300px;" class="center">
+          <option value="random" class="center">Random Option out of Each</option>
+          <option value="joke" class="center">Jokes</option>
+          <option value="word" class="center">Random Words</option>
+        </select>
+        
+        <br>
+        
+        <label for="typingTest" class="center">Typing Test Time Limit</label>
+        
+        <select id="typingTest" class="center"style="width: 400px;">
+          <option value="none" class="center">None</option>
+          <option value="0:30" class="center">0:30</option>
+          <option value="1:00" class="center">1:00</option>
+          <option value="3:00" class="center">3:00</option>
+          <option value="5:00" class="center">5:00</option>
+        </select>
+        
+        <br>
+        
+        <button class="center" id="submitForm" onclick="startTyping();">Start</button>
+
+      </div>
+      <p id="stats" style="display: none;" class="center"></p><br>
+      <button id="startNewTest" style="display: none;" class="center">
+        Start New Test
+      </button>
+      <br><br>
+      
+    </main>
+    <!-- import the jquery library & the webpage's client-side javascript file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/script.js" defer></script>
+  </body>
+</html>
