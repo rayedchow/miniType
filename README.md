@@ -13,5 +13,6 @@ A Minimalist Web-Server Typing Application.
 
 ## Deploy
 
-This site will be deploying soon to [**Heroku**](https://heroku.com). After official deployance, the site will be posted here.
+Site is [**minitype.herokuapp.com**](https://minitype.herokuapp.com/).
+This site is deployed at [**Heroku**](https://heroku.com).
 For testing, the site was originally deployed on [**Glitch**](https://glitch.com/).
