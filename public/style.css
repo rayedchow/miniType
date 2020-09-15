@@ -72,10 +72,9 @@ main {
   width: 400px;
 }
 
-#footer {
+#footerCredit {
   position: fixed;
   display: block;
-  bottom: 100%;
   text-align: left;
   margin: 0;
 }

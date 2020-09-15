@@ -200,7 +200,9 @@ const timerElement = document.getElementById("timer");
 // Doesn't do anything rn, if I continue this project, I will make an scrollDown animation for this
 textBTNElement.addEventListener("click", fetchText);
 document.getElementById("newTextBTN").addEventListener("click", fetchText);
-document.getElementById("endTestBTN").addEventListener("click", endTyping(false));
+document.getElementById("endTestBTN").addEventListener("click", () => {
+  endTyping(false);
+});
 document.getElementById("submitForm").addEventListener("click", startTyping);
 
 // Main Typing Event Function
