@@ -71,3 +71,9 @@ main {
 #typingTest, #typingBox {
   width: 400px;
 }
+
+#footer {
+  display: block;
+  text-align: left;
+  position: fixed;
+}
